@@ -1,0 +1,113 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "gobank",
+    "dateExported": "2023-06-16T14:12:37.095Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "c83084c2-d1aa-45e2-a67c-6be1056d5b29",
+            "colId": "afbc8a61-f446-43be-a37d-f20ad2ff3599",
+            "containerId": "",
+            "name": "get accounts",
+            "url": "http://localhost:3000/account",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2023-06-16T10:50:36.668Z",
+            "modified": "2023-06-16T10:50:56.609Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "53727fed-191f-4b04-b4b1-a89e314cbcd8",
+            "colId": "afbc8a61-f446-43be-a37d-f20ad2ff3599",
+            "containerId": "",
+            "name": "create account",
+            "url": "http://localhost:3000/account",
+            "method": "POST",
+            "sortNum": 15000,
+            "created": "2023-06-16T10:51:36.512Z",
+            "modified": "2023-06-16T13:58:09.622Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"firstName\": \"ana\",\n  \"lastName\": \"de harnet\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "a071caa6-cffc-4c82-972b-91474bb9a4c0",
+            "colId": "afbc8a61-f446-43be-a37d-f20ad2ff3599",
+            "containerId": "",
+            "name": "login",
+            "url": "http://localhost:3000/login",
+            "method": "POST",
+            "sortNum": 16250,
+            "created": "2023-06-16T14:11:45.468Z",
+            "modified": "2023-06-16T14:12:30.303Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"number\": 7887,\n  \"password\": \"hunter1234\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "671f4967-9f85-4351-a021-076857d5e2ea",
+            "colId": "afbc8a61-f446-43be-a37d-f20ad2ff3599",
+            "containerId": "",
+            "name": "transfer",
+            "url": "http://localhost:3000/transfer",
+            "method": "POST",
+            "sortNum": 17500,
+            "created": "2023-06-16T10:53:13.584Z",
+            "modified": "2023-06-16T10:54:03.692Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"toAccount\": 10025,\n  \"amount\": 100\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "1d6097e8-79c1-4fac-945f-8862387c551e",
+            "colId": "afbc8a61-f446-43be-a37d-f20ad2ff3599",
+            "containerId": "",
+            "name": "get one account",
+            "url": "http://localhost:3000/account/5",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2023-06-16T10:51:06.747Z",
+            "modified": "2023-06-16T14:01:25.949Z",
+            "headers": [
+                {
+                    "name": "x-jwt-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50TnVtYmVyIjo4MDgxLCJleHBpcmVzQXQiOjE1MDAwfQ.-4G1Qc9-iBQWSiZc1D7y67_aCT3jWDpMamY_4S9qwxI"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "dbc379d5-69db-4f41-b519-7b7ac6724f79",
+            "colId": "afbc8a61-f446-43be-a37d-f20ad2ff3599",
+            "containerId": "",
+            "name": "delete one account",
+            "url": "http://localhost:3000/account/2",
+            "method": "DELETE",
+            "sortNum": 30000,
+            "created": "2023-06-16T11:09:13.553Z",
+            "modified": "2023-06-16T11:09:31.896Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        }
+    ]
+}
